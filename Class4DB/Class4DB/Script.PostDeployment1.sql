@@ -21,9 +21,9 @@ BEGIN
 END
 
 INSERT INTO Class VALUES
-('Programming', 01, GETDATE(), null),
-('Programming2', 02, GETDATE(), null),
-('Programming3', 03, GETDATE(), null)
+('Programming', 1, GETDATE(), null),
+('Programming2', 2, GETDATE(), null),
+('Programming3', 3, GETDATE(), null)
 
 INSERT INTO Student_Class VALUES
 (1, 3, GETDATE(), null),

@@ -63,9 +63,11 @@
     <Build Include="Class.sql" />
     <Build Include="Student_Class.sql" />
     <Build Include="VW_GetAllStudentsAndClasses.sql" />
-    <Build Include="DatabaseScalarFunction1.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Class4DB.publish.xml" />
   </ItemGroup>
 </Project>
