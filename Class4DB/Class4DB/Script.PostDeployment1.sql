@@ -10,10 +10,15 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-INSERT INTO Student VALUES
-('Alex', 'Schaffhauser', 22, GETDATE(), null),
-('Alex2', 'Schaffhauser2', 23, GETDATE(), null),
-('Alex3', 'Schaffhauser3', 24, GETDATE(), null)
+IF((SELECT  COUNT(1) FROM Student) = 0)
+BEGIN
+
+	INSERT INTO Student VALUES
+	('Alex', 'Schaffhauser', 22, GETDATE(), null),
+	('Alex2', 'Schaffhauser2', 23, GETDATE(), null),
+	('Alex3', 'Schaffhauser3', 24, GETDATE(), null)
+
+END
 
 INSERT INTO Class VALUES
 ('Programming', 01, GETDATE(), null),
